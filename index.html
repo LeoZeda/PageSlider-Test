@@ -7,29 +7,46 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" >
     <meta name="format-detection" content="telephone=no, email=no">
     <title>PageSlider Test</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="animations.css" >
 </head>
 <body>
     <div class="page-wrap">
         <div class="page">
-            <div class="title">page one</div>
-            <div class="subtitle">page one subtitle</div>
+            <div class="title">关于本人</div>
+            <!--<div class="subtitle">page one subtitle</div>-->
+            <div class="content">
+                <div class="circle pt-page-movecircle"></div>
+                <div class="description pt-page-moveFromLeft">
+                    具有前端和后台开发经验，可独立完成项目开发，学习能力强。
+                    <ul>
+                        <li>--曾就职于网易，负责项目的前后端开发</li>
+                        <li>--具有1.5年工作经验</li>
+                        <li>--华南理工大学， 软件工程硕士毕业</li>
+                        <li>--熟悉ReactJS、AngularJS</li>
+                    </ul>
+                </div>
+            </div>
             <div class="arrow"></div>
         </div>
 
         <div class="page">
-            <div class="title">page two</div>
-            <div class="subtitle">page two subtitle</div>
+            <!--<div class="title">page two</div>-->
+            <!--<div class="subtitle">page two subtitle</div>-->
+            <div class="content">
+                <div class="bg-img pt-page-moveFromBottom"></div>
+                <div class="person pt-page-moveFromLeft"></div>
+                <div class="word pt-page-movecircle"></div>
+            </div>
             <div class="arrow"></div>
         </div>
         <div class="page">
-            <div class="title">page three</div>
-            <div class="subtitle">page three subtitle</div>
+            <div class="title">手机预览</div>
+            <div class="subtitle">扫描二维码</div>
+            <div class="content" >
+                <div class="qr-code pt-page-movecircle"></div>
+            </div>
             <div class="arrow"></div>
-        </div>
-        <div class="page">
-            <div class="title">page four</div>
-            <div class="subtitle">page four subtitle</div>
         </div>
     </div>
     <script src="zepto-1.2.0.js"></script>
